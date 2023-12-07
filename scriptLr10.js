@@ -6,9 +6,16 @@ const imagesQuantity = 5;
 const maxTries = 3;
 
 function startGame() {
-    userName = prompt("Введіть своє ім'я:");
-    const nameOfUser = document.getElementById('nameOfUser');
-    nameOfUser.innerHTML = userName;    
+    let userInput = prompt("Введіть своє ім'я:");
+    if (userInput === null || userInput === "") {
+    // Якщо введено пустий рядок або вибрано "Cancel", встановіть ім'я за замовчуванням
+    userName = "User";
+} else {
+    // Якщо користувач ввів ім'я, встановіть його
+    userName = userInput;
+}
+const nameOfUser = document.getElementById('nameOfUser');
+nameOfUser.innerHTML = userName;      
 }
 
 function processRound() {
