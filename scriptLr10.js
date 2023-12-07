@@ -6,9 +6,9 @@ const imagesQuantity = 5;
 const maxTries = 3;
 
 function startGame() {
-    // userName = prompt("Введіть своє ім'я:");
-    // const nameOfUser = document.getElementById('nameOfUser');
-    // nameOfUser.innerHTML = userName;    
+    userName = prompt("Введіть своє ім'я:");
+    const nameOfUser = document.getElementById('nameOfUser');
+    nameOfUser.innerHTML = userName;    
 }
 
 function processRound() {
