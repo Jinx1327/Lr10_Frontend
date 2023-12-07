@@ -14,8 +14,8 @@ function startGame() {
     // Якщо користувач ввів ім'я, встановіть його
     userName = userInput;
 }
-const nameOfUser = document.getElementById('nameOfUser');
-nameOfUser.innerHTML = userName;      
+    const nameOfUser = document.getElementById('nameOfUser');
+    nameOfUser.innerHTML = userName;      
 }
 
 function processRound() {
